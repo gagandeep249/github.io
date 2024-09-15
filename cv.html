@@ -56,6 +56,15 @@
             height: 800px;
             border: none;
         }
+        /* Responsive design for smaller screens */
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 90%;
+            }
+            .pdf-container iframe {
+                height: 500px;
+            }
+        }
         footer {
             background: #333333;
             color: #ffffff;
@@ -83,7 +92,7 @@
         <section id="cv">
             <div class="section-title">Curriculum Vitae</div>
             <div class="pdf-container">
-                <iframe src="CV_May.pdf" allow="autoplay"></iframe>
+                <iframe src="CV_Sep.pdf" allow="autoplay"></iframe>
             </div>
         </section>
     </div>
