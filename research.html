@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research - Gagandeep Sachdeva</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -74,6 +75,13 @@
             margin-top: 20px;
         }
     </style>
+
+    <style>
+    .abstract {
+        display: none;
+        overflow: hidden;
+    }
+</style>
 </head>
 <body>
     <header>
@@ -100,27 +108,46 @@
             </ul>
 
             <div class="section-title">Working Papers</div>
-            <ul>
-                <li><strong>Affirmative Action, Faculty Productivity, and Caste Interactions</strong>: Evidence from Engineering Colleges in India (with Robert Fairlie, Saurabh Khanna, Prashant Loyalka)</li>
-            </ul>
+            <<div class="paper-title">
+    Affirmative Action, Faculty Productivity, and Caste Interactions</strong>: Evidence from Engineering Colleges in India (with <a href="https://rfairlie.sites.luskin.ucla.edu/" target="_blank">Robert Fairlie</a>, <a href="https://saurabh-khanna.github.io/" target="_blank">Saurabh Khanna</a>, and <a href="https://ed.stanford.edu/faculty/loyalka" target="_blank">Prashant Loyalka</a>)
+    <p style="font-size: 14px; margin-left: 20px;">
+        <a href="javascript:void(0);" onclick="toggleAbstract('#abstract1')" style="color: #007bff; text-decoration: underline;">
+            &#x25BC; Click here to view abstract/download paper
+        </a>
+    </p>
+</div>
+<div id="abstract1" class="abstract">
+    <p>Affirmative action programs are often criticized because of concerns that they result in lower worker productivity and efficiency losses. We study the relative productivity of workers benefiting from an aggressive affirmative action policy in a setting where hiring constraints are especially likely to bind. In India, colleges are required to reserve approximately 50 percent of faculty hires for individuals from disadvantaged caste and social class groups. We collect and analyze data from a nationally representative sample of 50 engineering and technology colleges in India, some of which randomly assign students to classrooms. We find that reservation category faculty have lower levels of education, lower professorial ranks and fewer years of experience in academia than general category faculty who are not hired through reservations. Yet, even with lower qualifications, we find no evidence that reservation category faculty provide lower quality instruction across a wide range of measures that include course grades, follow-on course grades, standardized test scores, dropout, attendance, graduate school plans, and graduation. In fact, we find that, at least for immediate effects on course grades, students taught by reservation category faculty perform slightly better than students taught by general category faculty. We find no evidence of positive "teacher-like-me" effects of reservation category faculty on the relative course performance and longer-term outcomes of reservation category students. Furthermore, even in the face of potential discrimination and resentment against faculty hiring quotas, general category students perform slightly better in classrooms taught by reservation category faculty than general category faculty. The findings have implications for the heated debates over affirmative action programs found in many countries around the world and in India which is now the largest country in the world.</p>
+    <div class="pdf-container">
+        <a href="AA_FKLS_Sep24.pdf" target="_blank">Download PDF</a>
+    </div>
+    <p style="font-size: 14px; margin-left: 20px;">
+        <a href="javascript:void(0);" onclick="toggleAbstract('#abstract1')" style="color: #007bff; text-decoration: underline;">
+            &#x25B2; Collapse
+        </a>
+    </p>
+</div>
 
-            <div class="paper-link">
-                <a href="AA_FKLS_Sep24.pdf" target="_blank">Download PDF</a>
-            </div>
-
-            <div class="section-title">Work in Progress</div>
+<div class="section-title">Work in Progress</div>
             <ul>
                 <li>(Job Market Paper) <strong>Gender Gaps in Elementary and Middle School Performance and The Role of Teachers: Evidence from North Carolina</strong> (Draft Coming Soon!)</li>
-                <li><strong>An Engineering Instructor Like Me: Female Teacher-Student Interactions in Indian Engineering Colleges</strong> (with Robert Fairlie, Mridul Joshi, Saurabh Khanna, Prashant Loyalka) (Draft Coming Soon!)</li>
-                <li><strong>The Performance of Affirmative Action Admits in College: Evidence from Reservation Policies in Indian Engineering Colleges</strong> (with Robert Fairlie, Saurabh Khanna, Prashant Loyalka)</li>
-                <li><strong>School Sports and Academic Success</strong>: Evidence from Texas (with Evan Bennett, Derek Rury, Sofia Shchukina)</li>
+                <li><strong>An Engineering Instructor Like Me: Female Teacher-Student Interactions in Indian Engineering Colleges</strong> (with <a href="https://rfairlie.sites.luskin.ucla.edu/" target="_blank">Robert Fairlie</a>, Mridul Joshi, <a href="https://saurabh-khanna.github.io/" target="_blank">Saurabh Khanna</a>, and <a href="https://ed.stanford.edu/faculty/loyalka" target="_blank">Prashant Loyalka</a>)</li>
+                <li><strong>The Performance of Affirmative Action Admits in College: Evidence from Reservation Policies in Indian Engineering Colleges</strong> (with <a href="https://rfairlie.sites.luskin.ucla.edu/" target="_blank">Robert Fairlie</a>, <a href="https://saurabh-khanna.github.io/" target="_blank">Saurabh Khanna</a>, and <a href="https://ed.stanford.edu/faculty/loyalka" target="_blank">Prashant Loyalka</a>)</li>
+                <li><strong>School Sports and Academic Success</strong>: Evidence from Texas (with <a href="https://www.evanmbennett.com/" target="blank">Evan Bennett</a>, <a href="https://sites.google.com/view/derek-rury/home?authuser=0" target="blank">Derek Rury</a>, and Sofia Shchukina)</li>
                 <li><strong>Gender, STEM, and Confirmation Bias</strong></li>
             </ul>
         </section>
     </div>
 
+
     <footer>
         <p>Gagandeep Sachdeva &copy; 2024</p>
     </footer>
+
+    <script>
+    function toggleAbstract(id) {
+        $(id).slideToggle(500);
+    }
+</script>
 </body>
 </html>
