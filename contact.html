@@ -64,6 +64,19 @@
             border: none;
             cursor: pointer;
         }
+        .social-links {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .social-links a {
+            text-decoration: none;
+            font-size: 24px;
+            margin: 0 10px;
+        }
+        .social-links i {
+            font-size: 24px;
+            margin-right: 5px;
+        }
         footer {
             background: #333333;
             color: #ffffff;
@@ -78,20 +91,19 @@
         <div class="container">
             <h1>Gagandeep Sachdeva</h1>
             <nav>
-    <a href="index.html">Home</a>
-    <a href="research.html">Research</a>
-    <a href="teaching.html">Teaching</a>
-    <a href="cv.html">CV</a>
-    <a href="contact.html">Contact</a>
-</nav>
-
+                <a href="index.html">Home</a>
+                <a href="research.html">Research</a>
+                <a href="teaching.html">Teaching</a>
+                <a href="cv.html">CV</a>
+                <a href="contact.html">Contact</a>
+            </nav>
         </div>
     </header>
 
     <div class="container">
         <section id="contact">
             <div class="section-title">Contact Me</div>
-            <form class="contact-form" action="mailto:gsachdev@ucsc.edu" method="post" enctype="text/plain">
+            <form class="contact-form" action="mailto:your-email@example.com" method="post" enctype="text/plain">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 <label for="email">Email:</label>
@@ -100,11 +112,26 @@
                 <textarea id="message" name="message" rows="4" required></textarea>
                 <input type="submit" value="Send">
             </form>
+
+            <!-- Social Media Links Section -->
+            <div class="social-links">
+    <p>Connect with me:</p>
+    <a href="https://www.linkedin.com/in/gagandeep-sachdeva-a518a1151/" target="_blank">
+        <img src="linkedin-logo.png" alt="LinkedIn" style="width: 30px; height: 30px;">
+    </a>
+    <a href="https://x.com/notgaganshallow" target="_blank">
+        <img src="twitter-logo.png" alt="Twitter" style="width: 30px; height: 30px;">
+    </a>
+</div>
+
         </section>
     </div>
 
     <footer>
         <p>Gagandeep Sachdeva &copy; 2024</p>
     </footer>
+
+    <!-- Add Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 </html>
