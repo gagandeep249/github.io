@@ -1,0 +1,28 @@
+name: Compile LaTeX CV
+
+on:
+  push:
+    branches:
+      - main  # You can change 'main' to whatever branch you use
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up LaTeX environment
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: CV_Gagandeep_Updated.tex  # Update with the name of your .tex file
+          compiler: pdflatex
+
+      - name: Commit compiled PDF
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add CV_Gagandeep_Updated.pdf
+          git commit -m "Auto-compiled CV PDF"
+          git push
