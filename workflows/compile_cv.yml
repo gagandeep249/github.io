@@ -16,7 +16,7 @@ jobs:
       - name: Set up LaTeX environment
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: CV_Gagandeep_Updated.tex  # Your LaTeX file name
+          root_file: CV_Gagandeep_Updated.tex
           compiler: pdflatex
 
       - name: Commit compiled PDF
