@@ -1,0 +1,18 @@
+# Makefile to compile LaTeX files into PDF
+
+# Set the target PDF filename
+TARGET = CV_Gagandeep_Updated.pdf
+
+# Source .tex file
+SRC = CV_Gagandeep_Updated.tex
+
+# Rule to compile the .tex file
+$(TARGET): $(SRC)
+	@pdflatex $(SRC)
+
+# Rule to clean up intermediate files
+clean:
+	@rm -f *.aux *.log *.out *.toc
+
+# Rule to force recompilation
+.PHONY: all clean
