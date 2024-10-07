@@ -17,7 +17,7 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: CV_Gagandeep_Updated.tex
-          compiler: pdfLaTeX
+          compiler: pdflatex  # Lowercase 'pdflatex'
 
       - name: Commit compiled PDF
         run: |
@@ -26,3 +26,5 @@ jobs:
           git add CV_Gagandeep_Updated.pdf
           git commit -m "Auto-compiled CV PDF"
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use GitHub token to authenticate push
