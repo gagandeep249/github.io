@@ -12,65 +12,92 @@
             background-color: #ffffff;
             color: #333333;
         }
+
         .container {
             width: 60%;
             margin: auto;
             padding: 20px 0;
         }
+
         header {
             background: #333333;
             color: #ffffff;
             padding: 10px 0;
             text-align: center;
         }
+
         header h1 {
             margin: 0;
             font-size: 24px;
         }
+
         nav {
             text-align: center;
             margin-top: 10px;
         }
+
         nav a {
             color: #ffffff;
             text-decoration: none;
             padding: 10px;
             font-size: 16px;
         }
+
         nav a:hover {
             background: #444444;
         }
+
         section {
             padding: 20px 0;
         }
+
         .section-title {
             font-size: 22px;
             border-bottom: 2px solid #333333;
-            padding-bottom: 5px;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
         }
-        img {
-            width: 150px;
-            border-radius: 50%;
-            margin: 20px 0;
+
+        /* --- Profile image: left-aligned, balanced size --- */
+        .profile-pic {
+            width: 145px;
+            height: auto;
+            border-radius: 10%;
+            float: left;
+            margin-right: 25px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            object-fit: contain;
         }
+
+        /* --- Clear floats for next section --- */
+        #about {
+            clear: both;
+        }
+
         .personal-interests {
             text-align: center;
             margin-top: 15px;
         }
+
         .personal-interests img {
             width: 300px;
             height: 200px;
             margin: 10px;
             object-fit: cover;
+            border-radius: 8px;
         }
+
         .social-links {
             text-align: center;
             margin-top: 20px;
         }
+
         .social-links a {
             display: inline-block;
             margin: 0 10px;
         }
+
         footer {
             background: #333333;
             color: #ffffff;
@@ -79,8 +106,21 @@
             margin-top: 20px;
             width: 100%;
         }
+
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 90%;
+            }
+            .profile-pic {
+                float: none;
+                display: block;
+                margin: 0 auto 20px auto;
+                width: 150px;
+            }
+        }
     </style>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -90,35 +130,36 @@
                 <a href="research.html">Research</a>
                 <a href="teaching.html">Teaching</a>
                 <a href="cv.html">CV</a>
-                <a href="contact.html">Contact</a>
             </nav>
         </div>
     </header>
 
     <div class="container">
-        <!-- Add the TLC image here -->
+        <!-- === HOME / INTRO SECTION === -->
         <section id="home">
             <div class="section-title">Welcome</div>
-            <img src="index_picture.jpeg" alt="Gagandeep Sachdeva">
-            <p>Welcome! I’m a PhD candidate in Economics at the University of California, Santa Cruz. I broadly work in areas relating to discriminatory outcomes and mechanisms in education. Specifically, my research focuses on gender and caste-based inequalities in education, and their relationship with measures of teacher effectiveness, and teacher-student interactions.</p>
+            <img src="index_picture.jpg" alt="Gagandeep Sachdeva portrait" class="profile-pic">
+
+            <p>Welcome! I’m a Ph.D. candidate in Economics at the University of California, Santa Cruz. I broadly work in areas relating to discriminatory outcomes and mechanisms in education. Specifically, my research focuses on gender and caste-based inequalities in education, and their relationship with measures of teacher effectiveness and teacher–student interactions.</p>
+
+            <p><em>I am on the 2025–26 job market and available for interviews.</em></p>
 
             <p><b><u>Email:</u></b> <a href="mailto:gsachdev@ucsc.edu" target="_blank">gsachdev@ucsc.edu</a></p>
 
-            <p>You can find my CV <a href="cv.html">here</a>. You can also write to me <a href="contact.html">here</a>.</p>
+            <p>You can find my CV <a href="cv.html">here</a>.</p>
         </section>
 
+        <!-- === RESEARCH SECTION === -->
         <section id="about">
             <div class="section-title">About Me</div>
-            <h3>Research Themes</h3>
-            <ul>
-                <li>Gender and Caste-Based Educational Inequities</li>
-                <li>Affirmative Action and Teacher Quality</li>
-                <li>Heterogeneity in Teacher Effectiveness</li>
-            </ul>
-            <p>You can read more about my research <a href="research.html">here</a>.</p>
+
+            <h3>Research</h3>
+            <p>In my <a href="Comparative Advantage Teachers Sachdeva.pdf" target="_blank">job market paper</a>, I investigate if and how teachers affect gaps in academic performance between boys and girls, through their impacts on both cognitive and non-cognitive skills. I argue that effective teachers have the strongest impacts on students in the dimension in which the students have a comparative disadvantage.</p>
+
+            <p>More broadly, my research examines inequities in education and the factors that shape them. I have several projects investigating how teachers influence student outcomes and affect disparities between groups, and how institutional factors such as affirmative action policies influence teacher quality. You can read more about these projects <a href="research.html">here</a>.</p>
 
             <h3>Teaching and Mentorship</h3>
-            <p>Over the course of my PhD, I have been actively involved in teaching and mentorship. My teaching philosophy focuses on creating a supportive, inclusive learning environment where students are encouraged to engage critically and analytically with topics typically taught in economics courses, but with an emphasis on economics as a quantitative social science. You can read more about my teaching and mentorship <a href="teaching.html">here</a>.</p>
+            <p>Over the course of my Ph.D., I have been actively involved in teaching and mentorship. My teaching philosophy focuses on creating a supportive, inclusive learning environment where students are encouraged to engage critically and analytically with topics typically taught in economics courses, but with an emphasis on economics as a quantitative social science. You can read more about my teaching and mentorship <a href="teaching.html">here</a>.</p>
 
             <h3>Personal Interests</h3>
             <p>Outside of academia, I love playing blues guitar, climbing, and exploring new coffee shops.</p>
@@ -128,7 +169,7 @@
                 <img src="mrtoots.jpg" alt="Mr Toots Coffeehouse, Capitola CA">
             </div>
 
-            <!-- Social Media Links Section -->
+            <!-- === SOCIAL LINKS === -->
             <div class="social-links">
                 <p>Links:</p>
                 <a href="https://www.linkedin.com/in/gagandeep-sachdeva-a518a1151/" target="_blank">
@@ -147,10 +188,8 @@
         </section>
     </div>
 
-    <!-- Footer is moved outside of the container to ensure full width -->
     <footer>
-        <p>Gagandeep Sachdeva &copy; 2024</p>
+        <p>© 2025 Gagandeep Sachdeva | Updated October 2025</p>
     </footer>
 </body>
 </html>
-
