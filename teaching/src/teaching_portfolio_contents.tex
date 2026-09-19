@@ -1,0 +1,136 @@
+% Teaching Portfolio — contents page, standalone compilable version.
+% Assembly (see note at bottom): bind the three compiled PDFs with pdfpages.
+\documentclass[letter,11pt]{article}
+\usepackage[margin=0.97in, headheight=60pt]{geometry} % Ensuring proper header space
+\usepackage{parskip} % Adds space between paragraphs
+\usepackage{enumitem} % For list customization
+\usepackage{hyperref} % For hyperlinks
+\usepackage{titlesec} % For section title formatting
+\usepackage{fontawesome} % For icons (email, phone, etc.)
+\usepackage{xcolor} % For color
+\usepackage{fancyhdr} % For header and footer
+\usepackage{array} % For better alignment control
+\usepackage{tabularx} % To control column width
+\usepackage[normalem]{ulem} % For underlining styles
+\usepackage{calligra} % Calligra handwritten font package
+\usepackage{xcolor} % Optional: for customizing font color
+\usepackage{mathrsfs}
+\usepackage{pdfpages}
+
+% --- Added for the teaching documents (figures, captions, tables) ---
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{booktabs}
+\usepackage{amssymb} % provides \blacksquare used by the list bullets
+% --------------------------------------------------------------------
+
+\usepackage{multicol} % For multiple columns
+\setlength{\columnsep}{0.1cm} % Adjusts the spacing between columns
+\usepackage{ragged2e}
+
+% Define darkslategray using RGB
+\definecolor{darkslategray}{RGB}{47, 79, 79} 
+\definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
+
+% Font for a more artsy and modern vibe
+\usepackage{libertine} % Professional but unique font family
+\renewcommand{\familydefault}{\sfdefault} % Switch to sans-serif for headers
+
+% Header formatting with color and layout adjustments
+\fancypagestyle{firstpage}{ % Define a custom style for the first page
+  \fancyhf{} % Clear all header and footer fields
+  \fancyhead[L]{\textbf{\LARGE Gagandeep Sachdeva}\\Post-Doctoral Fellow, JPAL South Asia}
+  \fancyhead[R]{\\
+  
+      \href{mailto:gsachdeva@povertyactionlab.org}{\faEnvelope\ gsachdeva@povertyactionlab.org} \\
+      \faPhone\ +1 (831)-295-3570 \\
+      %\href{https://scholar.google.com/citations?user=hwENZWUAAAAJ&hl=en}{\faGlobe\ Google Scholar}\\
+      \href{https://gagandeep-sachdeva.com/}{\faGlobe\ Personal Website}
+  }
+  \fancyfoot[C]{\thepage} % Page number centered in footer
+}
+\pagestyle{plain} % Plain page style for subsequent pages (no header, only page number in footer)
+
+
+% Set hyperlink color to blue
+% Define a light background color for links
+\definecolor{highlightbg}{RGB}{230, 230, 230}
+\definecolor{darkgrayishblue}{RGB}{60, 70, 85} % More gray than blue but distinguishable
+
+% Set up hyperlinks with custom styling
+\hypersetup{
+    colorlinks=true, % Enable colored links
+    linkcolor=darkslategray, % Use dark grayish blue for links
+    urlcolor=darkslategray,  % URL color using dark grayish blue
+    citecolor=darkslategray, % Citation links color
+    filecolor=darkslategray  % File links color
+}
+
+% Define custom hyperlink formatting: bold or slight emphasis with the new color
+\renewcommand\UrlFont{\color{darkgrayishblue}\itshape} % Italicized dark grayish blue links
+% Section title formatting with color and underline
+\titleformat{\section}
+{\color{darkslategray}\large\bfseries}{}{0em}{}[\titlerule] % Use defined darkslategray
+
+% Custom bullets for lists
+\renewcommand{\labelitemi}{\scriptsize\textcolor{darkslategray}{$\blacksquare$}} % Dark slate gray-colored square bullets
+
+% Set nested list indentation levels
+\setlist[itemize,1]{left=0pt, label={\scriptsize\textcolor{darkslategray}{$\blacksquare$}}}
+\setlist[itemize,2]{left=20pt, label={\scriptsize\textcolor{darkslategray}{$\bullet$}}} % Nested level 2
+\setlist[itemize,3]{left=40pt, label={\scriptsize\textcolor{darkslategray}{$-$}}}       % Nested level 3
+
+% Adjust list indentation and paragraph spacing
+\setlist[itemize]{leftmargin=0pt} % fixed: dimension needs a unit
+\setlist[enumerate]{leftmargin=0pt} % fixed: dimension needs a unit
+\setlength{\parskip}{0.5em}
+
+
+
+% Command to right-align dates
+\newcommand{\dateright}[1]{\hfill{\small #1}}
+
+\begin{document}
+
+\thispagestyle{firstpage}
+\begin{center}
+    \textbf{\large{Teaching Portfolio}}
+\end{center}
+
+I taught sixteen courses at UC Santa Cruz between 2020 and 2026: fifteen as a teaching assistant, from introductory microeconomics through graduate econometrics, and one, Intermediate Microeconomics, as instructor of record. As Graduate Pedagogy Fellow (2022--2026), I created the department's workshop series for graduate teaching assistants and led it each year for three years. This portfolio collects three kinds of material: a teaching statement, a summary of student evaluations, and sample syllabi for two courses I have designed. Student evaluations are available for fourteen of the sixteen courses; the Winter 2020 course was evaluated on an earlier platform and could not be recovered, and the Spring 2025 evaluation is not available on the current platform. The complete, unedited evaluation reports are linked throughout, and every figure and quotation in this portfolio is drawn from them.
+
+\subsection*{Contents}
+
+\begin{enumerate}
+    \item \textbf{Teaching Statement.} How I teach and the evidence behind it, with a one-page summary figure of all evaluations in the appendix.
+    \item \textbf{Teaching Evaluations: Summary.} Every course on every evaluation item, voluntary section attendance by course, the instructor-of-record evaluation, and selected comments, with links to the complete reports.
+    \item \textbf{Sample Syllabi.} Described below; full syllabi are linked.
+\end{enumerate}
+
+\subsection*{Sample syllabi}
+
+\textit{Principles of Economics.} An introductory course that treats economic models as tools -- each with assumptions, applications, and limits -- rather than as a set of settled truths. Its learning outcomes ask for judgment as much as technique: identifying which framework fits a given context, distinguishing evidence-based claims from opinion, and tracing how individual decisions and broader economic systems influence each other, across a single arc that runs from agents through markets to systems and ends on growth and inequality. Assessment is built so that persistence converts into points: unlimited-attempt mastery quizzes where only the best score counts, participation graded on effortful completion, and dropped attendances and extensions as automatic policy for everyone. The syllabus is annotated in the margin with the reasoning behind each of these choices; the margin column is the reason to open it. \href{https://gagandeep-sachdeva.com/teaching/principles/Syllabus_Principles.pdf}{[Full syllabus]} % pending compile; path final
+
+\medskip
+\textit{Current Debates in Economics.} A lower-division economics course run as a discussion seminar, on debates the field has not settled -- minimum wages, unions, immigration, discrimination, affirmative action, environmental justice. Students are not asked to take a side; they are graded on how well they frame one: stating each position's premises and conclusions, and identifying what would count as evidence. They lead one class discussion in a small group and develop a staged reflection paper engaging critically and charitably with a debate of their choosing. The same margin annotations and universally designed policies carry through. \href{https://gagandeep-sachdeva.com/teaching/currentdebates/Syllabus_CurrentDebates.pdf}{[Full syllabus]} % pending compile; path final
+
+\subsection*{Complete evaluation reports}
+
+\begin{itemize}
+    \item \href{https://gagandeep-sachdeva.com/teaching/TA_Evals_All_2020_2026.pdf}{Teaching assistant evaluations, all courses, 2020--2026}
+    \item \href{https://gagandeep-sachdeva.com/teachingevals_GSI.pdf}{Instructor-of-record evaluation, Intermediate Microeconomics (Summer 2024)}
+    \item \href{https://gagandeep-sachdeva.com/Feedback\%20for\%20TA\%20Workshops-\%20Fall\%202023.pdf}{Participant feedback, graduate TA pedagogy workshops (Fall 2023)}
+\end{itemize}
+
+% ---------------------------------------------------------------
+% ASSEMBLY for the master portfolio PDF (each piece is standalone now):
+% compile all three documents separately, then bind with a tiny master:
+%   \documentclass{article}\usepackage{pdfpages}\begin{document}
+%   \includepdf[pages=-]{Teaching_Portfolio_Contents.pdf}
+%   \includepdf[pages=-]{Teaching_Statement_Sachdeva.pdf}
+%   \includepdf[pages=-]{Teaching_Evaluations_Summary_Sachdeva.pdf}
+%   \end{document}
+% Output: Teaching_Portfolio_Sachdeva.pdf -> teaching/
+% ---------------------------------------------------------------
+
+\end{document}
