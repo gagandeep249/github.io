@@ -1,0 +1,254 @@
+\documentclass[letter,11pt]{article}
+\usepackage[margin=1in, headheight=45pt]{geometry} % Ensuring proper header space
+\usepackage{parskip} % Adds space between paragraphs
+\usepackage{enumitem} % For list customization
+\usepackage{hyperref} % For hyperlinks
+\usepackage{titlesec} % For section title formatting
+\usepackage{fontawesome} % For icons (email, phone, etc.)
+\usepackage{xcolor} % For color
+\usepackage{fancyhdr} % For header and footer
+\usepackage{array} % For better alignment control
+\usepackage{tabularx} % To control column width
+\usepackage[normalem]{ulem} % For underlining styles
+
+\newcommand{\monthyear}{\ifcase\month\or January\or February\or March\or April\or May\or June\or July\or August\or September\or October\or November\or December\fi\ \the\year}
+
+\usepackage{multicol} % For multiple columns
+\setlength{\columnsep}{0.1cm} % Adjusts the spacing between columns
+\usepackage{ragged2e}
+%add comment for commit. Third try :))
+% Define darkslategray using RGB
+\definecolor{darkslategray}{RGB}{47, 79, 79} 
+
+% Font for a more artsy and modern vibe
+\usepackage{libertine} % Professional but unique font family
+\renewcommand{\familydefault}{\sfdefault} % Switch to sans-serif for headers
+
+% Header formatting with color and layout adjustments
+\fancypagestyle{firstpage}{ % Define a custom style for the first page
+  \fancyhf{} % Clear all header and footer fields
+  \fancyhead[L]{\textbf{\LARGE Gagandeep Sachdeva}\\ \small{\monthyear}}
+  \fancyhead[R]{
+      \href{mailto:gsachdeva@povertyactionlab.org}{\faEnvelope\ gsachdeva@povertyactionlab.org} \\
+      \faPhone\ +1 (831)-295-3570 \\
+      %\href{https://scholar.google.com/citations?user=hwENZWUAAAAJ&hl=en}{\faGlobe\ Google Scholar}\\
+      \href{https://gagandeep-sachdeva.com/}{\faGlobe\ Personal Website}
+  }
+  \fancyfoot[C]{\thepage} % Page number centered in footer
+}
+\pagestyle{plain} % Plain page style for subsequent pages (no header, only page number in footer)
+
+
+% Set hyperlink color to blue
+% Define a light background color for links
+\definecolor{highlightbg}{RGB}{230, 230, 230}
+\definecolor{darkgrayishblue}{RGB}{60, 70, 85} % More gray than blue but distinguishable
+
+% Set up hyperlinks with custom styling
+\hypersetup{
+    colorlinks=true, % Enable colored links
+    linkcolor=darkgrayishblue, % Use dark grayish blue for links
+    urlcolor=darkgrayishblue,  % URL color using dark grayish blue
+    citecolor=darkgrayishblue, % Citation links color
+    filecolor=darkgrayishblue  % File links color
+}
+
+% Define custom hyperlink formatting: bold or slight emphasis with the new color; committing a change
+\renewcommand\UrlFont{\color{darkgrayishblue}\itshape} % Italicized dark grayish blue links
+% Section title formatting with color and underline
+\titleformat{\section}
+{\color{darkslategray}\large\bfseries}{}{0em}{}[\titlerule] % Use defined darkslategray
+
+% Custom bullets for lists
+\renewcommand{\labelitemi}{\scriptsize\textcolor{darkslategray}{$\blacksquare$}} % Dark slate gray-colored square bullets
+
+% Set nested list indentation levels
+\setlist[itemize,1]{left=0pt, label={\scriptsize\textcolor{darkslategray}{$\blacksquare$}}}
+\setlist[itemize,2]{left=0pt, label={\scriptsize\textcolor{darkslategray}{$\bullet$}}} % Nested level 2
+\setlist[itemize,3]{left=0pt, label={\scriptsize\textcolor{darkslategray}{$-$}}}       % Nested level 3
+
+% Tighten vertical spacing between items and surrounding text
+\setlist[itemize]{
+    topsep=2pt,      % space above and below the list
+    itemsep=2pt,     % space between bullet points
+    parsep=0pt,      % space between paragraphs within an item
+    partopsep=0pt    % extra space before first item (reduces gap with text above)
+}
+
+
+% Command to right-align dates
+\newcommand{\dateright}[1]{\hfill{\small #1}}
+
+\begin{document}
+
+\thispagestyle{firstpage} % Apply custom header to this page
+% \begin{itemize}
+%     \item[] Citizenship: Indian
+%     \item[] Immigration Status: F1 Visa (STEM-OPT Eligible)
+% \end{itemize}
+
+\section{Current Position}
+\begin{itemize}
+    \item[] \textbf{Postdoctoral Fellow}, J-PAL South Asia \dateright{2026--}
+    \begin{itemize}
+        \item[] \small{PIs: Dr Karthik Muralidharan (UC San Diego) and Dr Abhijeet Singh (Stockholm School of Economics)}
+    \end{itemize}
+\end{itemize}
+
+\section{Education}
+\begin{itemize}
+    \item[] \textbf{PhD in Economics}, University of California, Santa Cruz \dateright{2026}
+        \begin{itemize}
+            \item[] Committee Chair: Dr Laura Giuliano
+            \end{itemize}
+    \item[] \textbf{MPhil in Economics}, Indira Gandhi Institute of Development Research \dateright{2018}
+    \item[] \textbf{MSc in Economics}, Indira Gandhi Institute of Development Research \dateright{2017}
+    \begin{itemize}
+            \item[] Awarded the Chancellor's Gold Medal for the Best-Performing Student in The M.Sc. Program.
+        \end{itemize}
+    \item \textbf{BA (Hons) Economics}, University of Delhi \dateright{2015}
+\end{itemize}
+
+\section{Publications}
+\begin{itemize}
+    \item[] {\textbf{Affirmative Action, Faculty Productivity, and Caste Interactions: Evidence from Engineering Colleges in India}} {\small{with Robert Fairlie, Saurabh Khanna, and Prashant Loyalka} \href{https://www.journals.uchicago.edu/doi/10.1086/743985}{[Link to Paper]}} \dateright{2026}
+        \begin{itemize}
+            \item[] \small{\textbf{Forthcoming}, \textbf{Journal of Political Economy Microeconomics}}
+         \end{itemize}
+\end{itemize}
+
+\section{Working Papers}
+\begin{itemize}
+\item[] {\textbf{Relative Skills in the Classroom: Teachers’ Gender-Differentiated Impacts on Test Scores and Course Grades}} {\small{\href{https://gagandeep-sachdeva.com/JMP%20Sachdeva.pdf}{[Link to Paper]}}}  \dateright{2026}
+\begin{itemize}
+    \item[] {\small{\textit{(Job Market Paper)}}}
+\end{itemize}
+
+\item[] \textbf{Female Faculty Reduce Anxiety About STEM and Raise Academic Achievement Among Female Undergraduates} {\small{with Robert Fairlie, Mridul Joshi, Saurabh Khanna, and Prashant Loyalka}} \dateright{2026}
+        \begin{itemize}
+             \item[] \small{\textbf{Revise and Resubmit}, \textbf{Nature Communications}}
+             \item[] \textit{(Draft Available Upon Request)}
+        \end{itemize}
+\item[] {\textbf{Nonlinear Segregation Dynamics in Schooling Markets: the Case of Caste in India}} {\small{with Moumita Das, Shreya Dutt, and Kartik Srivastava \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6807040}{[Link to Paper]}}} \dateright{2026}
+\begin{itemize}
+    \item[] {\small{\textit{(Revisions in Progress)}}}
+\end{itemize}
+\end{itemize}
+\section{Works in Progress}
+\begin{itemize}
+        \item[] \textbf{Class Size Effects in Developing Countries: Longitudinal Evidence from India} {\small{with Arushi Kaushik and Karthik Muralidharan} \textit{(Draft coming soon)}} 
+        \item[] \textbf{Contract Teachers: Experimental Evidence from India} {\small{with Karthik Muralidharan and Venkatesh Sundaraman}}
+        \item[] \textbf{Long-Term Effects of Teacher Performance Pay} {\small{with Karthik Muralidharan}}
+        \item[] \textbf{Friday Night Lights, Monday Morning Grades: How High School Football Success Affects Student Achievement} {\small{with Evan Bennett, Derek Rury, and Sofia Shchukina}}
+\end{itemize}
+
+\section{Teaching and Mentoring Experience}
+\begin{itemize}
+    \item[] \textbf{Instructor of Record}, Department of Economics, UCSC \dateright{2024}
+        % \begin{itemize}
+        %     \item[] Intermediate Microeconomics (Online Asynchronous)  %
+        % \end{itemize}
+    \item[] \textbf{Teaching Assistant}, Department of Economics, UCSC \dateright{2020--2026}
+    % \vspace{-1em}
+    % \begin{multicols}{2}
+    % \begin{small}
+    %     \begin{itemize}
+    %     \RaggedRight
+    %         \item[] Applied Econometrics (Graduate Course) %\dateright{Fall 2024}
+    %         \item[] Applications in Microeconomics (Graduate Course) %\dateright{Spring 2022}
+    %         \item[] Intermediate Microeconomics (x5) %\dateright{Fall 2021, Fall 2022, Winter 2024, Spring 2024}
+    %         \item[] Introductory Microeconomics (x4) %\dateright{Winter 2020, Winter 2021, Spring 2021}
+    %         \item[] Introductory Macroeconomics (x2) %\dateright{Fall 2023}
+    %         \item[] Industrial Organization %\dateright{Winter 2022}
+    %         \item[] Economic Rhetoric %\dateright{Summer 2021}
+    %         \item[]
+    %     \end{itemize}
+    %     \end{small}
+    % \end{multicols}
+    % \vspace{-1em}
+        \item[] \textbf{Graduate Pedagogy Fellow}, Teaching and Learning Center, UCSC \dateright{2022--2026}
+        % \begin{itemize}
+        %     \begin{small}
+        %     \item[] Assisted in developing teaching strategies for economics graduate students in their role as teaching assistants.
+        %     \item[] Conducted professional development workshops for graduate teaching assistants in using active learning in economics classrooms.  
+        %     \end{small} 
+        % \end{itemize}
+        \item[] \textbf{Peer Mentor, Summer GSI Support Team}, Teaching and Learning Center, UCSC \dateright{2024}
+        % \begin{itemize}
+        % \begin{small}
+        %     \item[] Developed equity-minded course learning outcomes, assessment plans, and an engaging course structure.
+        %     \item[] Lead discussions on effective teaching strategies, giving feedback to students, and navigating classroom challenges.
+        %     \item[] Facilitated peer feedback on lesson planning, syllabus design, and reflective teaching practices.
+        % \end{small}
+        % \end{itemize}
+\end{itemize}
+
+\section{Research and Work Experience}
+\begin{itemize}
+    \item[] \textbf{Graduate Student Researcher}, UC Santa Cruz \dateright{2020--2024}
+   %      \begin{itemize}
+   %      \item[] Prof Laura Giuliano, Department of Economics, UCSC
+	 	% \item[] Prof Robert Fairlie, Chair, Department of Public Policy, UCLA Luskin School of Public Affairs 
+	 	% \item[] Institutional Research, Assessment and Policy Studies Unit, UCSC
+   %      \end{itemize}
+    \item[] \textbf{Research Associate}, Economic Research Unit, Koan Advisory \dateright{2019}
+    \item[] \textbf{Research Assistant}, Delhi School of Economics \dateright{2017}
+        % \begin{itemize}
+        % \item[] Prof Rohini Somanathan, Center for Development Economics, DSE
+        % \end{itemize}   
+    
+\end{itemize}
+
+\section{Grants, Awards, and Fellowships}
+\begin{itemize}
+    \item[] Dissertation Completion Fellowship, Department of Economics, UCSC \dateright{2025}
+    \item[] Summer Dissertation Fellowship, Division of Social Sciences, UCSC \dateright{2025}
+    \item[] Summer GSI Peer Support Fellowship, Teaching and Learning Center, UCSC \dateright{2024}
+    \item[] Dissertation Research Grant, Department of Economics, UCSC \dateright{2024, 2023, 2022}
+    \item[] Graduate Pedagogy Fellowship, Teaching and Learning Center, UCSC \dateright{2022}
+    \item[] Regents' Fellowship, Graduate Division, UCSC \dateright{2019}
+    \item[] Chancellor's Gold Medal for the Best-Performing Student in The M.Sc. Program, IGIDR \dateright{2017}
+\end{itemize}
+
+\section{Conferences, Invited Talks, and Summer Schools}
+\begin{itemize}
+  \item[] Center for Education Policy Research, Harvard University \dateright{2026}
+  \item[] Behavioral Insights and Parenting Lab, University of Chicago \dateright{2026}
+  \item[] Grad Slam, UCSC Graduate Division \dateright{2026}
+  \item[] Brown Bag Seminar, Oregon State University \dateright{2025}
+  \item[] 47th Fall Research Conference, APPAM  \dateright{2025}
+  \item[] Invited Speaker, South Asian University, Delhi \dateright{2024}
+  \item[] Socio-Economic Mobility and Inequality, Harris School of Public Policy, University of Chicago \dateright{2024}
+  \item[] Graduate Symposium, UCSC Graduate Division \dateright{2024} 
+  \item[] Southern Economic Association, 93rd Annual Meeting, New Orleans \dateright{2023}
+  \item[] Biennial Conference on Development, Indira Gandhi Institute of Development Research \dateright{2022}
+\item[] Theory-Driven Experiments, Center for Theoretical and Experimental Social Sciences, CalTech \dateright{2022}
+\item[] All-California Labor Economics Conference, UCSC (poster session) \dateright{2019}
+\end{itemize}
+
+\section{Technical Skills}
+\begin{itemize}
+\item[] Data analysis: Stata, R, Microsoft Excel
+\item[] Agentic AI--assisted research workflows: pipeline development and automation with coding agents (Claude Code), integrated with Stata, Python, and \LaTeX
+\item[] Optimization and computation: Wolfram Mathematica
+\item[] Typesetting: \LaTeX
+\end{itemize}
+
+
+\section{References}
+\begin{itemize}
+    \item[] Available on Request
+\end{itemize}
+% \begin{itemize}
+%     \item[] \href{https://lauragiuliano.weebly.com/}{Dr Laura Giuliano}, Professor, Department of Economics, UC Santa Cruz \dateright{\href{mailto:lgiulian@ucsc.edu}{lgiulian@ucsc.edu}}
+%     \item[] \href{https://rfairlie.sites.luskin.ucla.edu/}{Dr Robert Fairlie}, Distinguished Professor, Public Policy and Economics, UCLA \dateright{\href{mailto:rfairlie@ucla.edu}{rfairlie@ucla.edu}}
+%     \item[] \href{https://people.ucsc.edu/~gbulman/}{Dr George Bulman}, Associate Professor, Department of Economics, UC Santa Cruz \dateright{\href{mailto:gbulman@ucsc.edu}{gbulman@ucsc.edu}}
+% \end{itemize}
+
+% \section{Teaching References}
+% \begin{itemize}
+%     \item[] \href{https://people.ucsc.edu/~cdobkin/}{Dr Carlos Dobkin}, Professor, Department of Economics, UC Santa Cruz \dateright{\href{mailto:cdobkin@ucsc.edu}{cdobkin@ucsc.edu}}
+%     \item[] \href{https://campusdirectory.ucsc.edu/cd_detail?uid=kdority}{Dr Kendra Dority}, Teaching and Learning Center, UC Santa Cruz \dateright{\href{mailto:kdority@ucsc.edu}{kdority@ucsc.edu}}
+% \end{itemize}
+
+\end{document}

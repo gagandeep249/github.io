@@ -1,0 +1,127 @@
+\documentclass[letter,10pt]{article}
+\usepackage[margin=0.97in, headheight=60pt]{geometry} % Ensuring proper header space
+\usepackage{parskip} % Adds space between paragraphs
+\usepackage{enumitem} % For list customization
+\usepackage{hyperref} % For hyperlinks
+\usepackage{titlesec} % For section title formatting
+\usepackage{fontawesome} % For icons (email, phone, etc.)
+\usepackage{xcolor} % For color
+\usepackage{fancyhdr} % For header and footer
+\usepackage{array} % For better alignment control
+\usepackage{tabularx} % To control column width
+\usepackage[normalem]{ulem} % For underlining styles
+\usepackage{calligra} % Calligra handwritten font package
+\usepackage{xcolor} % Optional: for customizing font color
+\usepackage{mathrsfs}
+\usepackage{pdfpages}
+
+
+
+\usepackage{multicol} % For multiple columns
+\setlength{\columnsep}{0.1cm} % Adjusts the spacing between columns
+\usepackage{ragged2e}
+
+% Define darkslategray using RGB
+\definecolor{darkslategray}{RGB}{47, 79, 79} 
+\definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
+
+% Font for a more artsy and modern vibe
+\usepackage{libertine} % Professional but unique font family
+\renewcommand{\familydefault}{\sfdefault} % Switch to sans-serif for headers
+
+% Header formatting with color and layout adjustments
+\fancypagestyle{firstpage}{ % Define a custom style for the first page
+  \fancyhf{} % Clear all header and footer fields
+  \fancyhead[L]{\textbf{\LARGE Gagandeep Sachdeva}\\Post-Doctoral Fellow, JPAL South Asia}
+  \fancyhead[R]{\\
+  
+      \href{mailto:gsachdeva@povertyactionlab.org}{\faEnvelope\ gsachdeva@povertyactionlab.org} \\
+      \faPhone\ +1 (831)-295-3570 \\
+      %\href{https://scholar.google.com/citations?user=hwENZWUAAAAJ&hl=en}{\faGlobe\ Google Scholar}\\
+      \href{https://gagandeep-sachdeva.com/}{\faGlobe\ Personal Website}
+  }
+  \fancyfoot[C]{\thepage} % Page number centered in footer
+}
+\pagestyle{plain} % Plain page style for subsequent pages (no header, only page number in footer)
+
+
+% Set hyperlink color to blue
+% Define a light background color for links
+\definecolor{highlightbg}{RGB}{230, 230, 230}
+\definecolor{darkgrayishblue}{RGB}{60, 70, 85} % More gray than blue but distinguishable
+
+% Set up hyperlinks with custom styling
+\hypersetup{
+    colorlinks=true, % Enable colored links
+    linkcolor=darkslategray, % Use dark grayish blue for links
+    urlcolor=darkslategray,  % URL color using dark grayish blue
+    citecolor=darkslategray, % Citation links color
+    filecolor=darkslategray  % File links color
+}
+
+% Define custom hyperlink formatting: bold or slight emphasis with the new color
+\renewcommand\UrlFont{\color{darkgrayishblue}\itshape} % Italicized dark grayish blue links
+% Section title formatting with color and underline
+\titleformat{\section}
+{\color{darkslategray}\large\bfseries}{}{0em}{}[\titlerule] % Use defined darkslategray
+
+% Custom bullets for lists
+\renewcommand{\labelitemi}{\scriptsize\textcolor{darkslategray}{$\blacksquare$}} % Dark slate gray-colored square bullets
+
+% Set nested list indentation levels
+\setlist[itemize,1]{left=0pt, label={\scriptsize\textcolor{darkslategray}{$\blacksquare$}}}
+\setlist[itemize,2]{left=20pt, label={\scriptsize\textcolor{darkslategray}{$\bullet$}}} % Nested level 2
+\setlist[itemize,3]{left=40pt, label={\scriptsize\textcolor{darkslategray}{$-$}}}       % Nested level 3
+
+% Adjust list indentation and paragraph spacing
+\setlist[itemize]{leftmargin=0}
+\setlist[enumerate]{leftmargin=0}
+\setlength{\parskip}{0.5em}
+
+
+
+% Command to right-align dates
+\newcommand{\dateright}[1]{\hfill{\small #1}}
+
+\begin{document}
+
+\thispagestyle{firstpage} % Apply custom header to this page
+\begin{center}
+    \textbf{\large{Research Statement}}
+\end{center}
+
+My research explores inequities in education and the factors that shape them. One strand of my work studies how teachers and learning environments shape gaps in achievement between boys and girls. A second strand studies teacher hiring and pay in Indian public education: what quotas, credentials, and salary structures buy in teacher effectiveness. A third studies how students and school resources are sorted and allocated within local schooling markets. Across these projects, I work with large administrative panels, randomized experiments, and quasi-experimental designs, in settings from public schools in North Carolina and Texas to rural government schools and engineering colleges in India -- measuring students' test scores, course grades, long-term outcomes like graduation and earnings, as well as psychosocial outcomes like anxiety, confidence, and beliefs, alongside teachers' outcomes like credentials, time use, and effort.
+
+
+\section*{Published and Working Papers}
+\begin{itemize}
+    \item[] \textcolor{darkslategray}{Relative Skills in the Classroom: Teachers' Gender-Differentiated Impacts on Test Scores and Course Grades} \href{https://gagandeep-sachdeva.com/JMP%20Sachdeva.pdf}{[View PDF]} \\
+    {\small{\textit{Job Market Paper, Under Review}}}\\
+    Girls outperform boys in teacher-assigned course grades by more than in test scores -- a  pattern often attributed to gender differences in non-cognitive skills. These grade gaps emerge early, expand as students progress through school, persist after conditioning on test scores, and predict gender gaps in long-run outcomes over and above those predicted by test score gaps. In my job market paper, I ask whether teachers impact boys and girls differently, depending on which skills they develop most effectively. Using administrative data from North Carolina, I find that fifth-grade teachers who improve test scores and those who improve course grades are largely different teachers -- and they benefit different students. Teachers with high test score value-added disproportionately benefit girls’ middle-school outcomes (both test scores and grades), and teachers with high grade value-added disproportionately benefit boys’ middle-school outcomes. Teachers’ grade value-added also raises boys' likelihood of remaining in school and graduating high school, with substantially smaller effects for girls. A simple model explains the asymmetry: if boys and girls enter the classroom with different relative skill mixes, and teachers have their largest impacts on students relatively deficient in the skill they develop, then gender-differentiated impacts arise without any role for teacher-student gender match or biased grading -- and the same asymmetry should appear among students sorted by baseline skill mix regardless of gender -- a prediction I test directly. These findings link multidimensional teacher effectiveness with multidimensional gender gaps in student achievement, suggesting that teacher effectiveness is not a single attribute, and that its multidimensionality matters for which students benefit.
+
+    \item[] \textcolor{darkslategray}{Affirmative Action, Faculty Productivity and Caste Interactions: Evidence from Engineering Colleges in India} {\small{with Robert Fairlie, Saurabh Khanna, and Prashant Loyalka}} \href{https://www.journals.uchicago.edu/doi/10.1086/743985}{[Link to Paper]} \\
+    {\small{\textbf{Forthcoming at Journal of Political Economy Microeconomics}}}\\
+    The central critique of affirmative action in hiring is an equity-efficiency tradeoff: workers hired through quotas have weaker credentials, and weaker credentials are presumed to mean lower productivity. However, evidence on the latter half of this assumption is mixed. We test it in the world's largest affirmative action program. Indian engineering colleges are required to reserve roughly half of faculty positions for candidates from disadvantaged castes and social classes. We collected data on faculty and students across a nationally representative sample of 50 colleges, including colleges that randomly assign students to classrooms and set course marks through externally graded exams. The first half of the assumption holds in our data: faculty hired through reservations have weaker credentials. The second half does not: we detect no gap in productivity across a wide range of student and faculty outcomes, including performance on standardized assessments, in-course assessments in immediate and follow-on courses, research output, and administrative service. On immediate course grades, students taught by reservation category faculty in fact perform slightly better, by about 1.3 to 1.5 percentile points -- with comparable improvements for both general and reservation category students. Our findings also speak to the debate on affirmative action at an earlier stage: fewer than 2 percent of India's reservation-category population hold the required credentials for these positions, and most who do obtained them through reserved seats in student admissions. The faculty quota thus draws on a pool of potentially equally productive candidates who, absent affirmative action in student admissions, would largely not have held the qualifications to apply. The findings are evidence that faculty diversity can be achieved without compromising educational quality -- in a highly technical field, across many universities, in the world's most populous country.
+
+    \item[] \textcolor{darkslategray}{Female Faculty Reduce Anxiety About STEM and Raise Academic Achievement Among Female Undergraduates} {\small{with Robert Fairlie, Mridul Joshi, Saurabh Khanna, and Prashant Loyalka}}\\
+    {\small{\textbf{Revise and Resubmit, Nature Communications}}}\\
+    {\small{\textit{Draft available upon request}}}\\
+    Female students in STEM perform better on academic assessments when taught by female faculty, and exposure to women in these fields also improves psychological outcomes for female students, by reducing anxiety and reshaping beliefs about who belongs in STEM. However, the performance effects and the psychological effects are rarely identified in a common, externally valid setting, and how the two are related is not well understood. We measure both sets of outcomes in one setting -- 11 Indian engineering colleges wherein students are randomly assigned to instructors and graded through externally administered exams, with academic records paired to validated measures of STEM-related anxiety, confidence, and gender beliefs. Female students taught by female faculty earn higher course marks, by about 2.6 percentile points. Gains in course marks are concentrated among female students with lower prior achievement, confidence, or commitment to their field at entry. Furthermore, a 10 percentage point increase in the share of female instructors over the first two years closes 18 percent of the gender gap in academic skills observed at the beginning of the program, as measured through standardized tests. Increased exposure to female instructors also lowers female students’ anxiety about mathematics and science, and male students' beliefs shift away from stereotypes about women's ability in STEM. These patterns are consistent with exposure to female faculty operating as a credible signal about who belongs in STEM -- reducing psychological threat, with effects on skills that persist beyond the classroom.
+
+    \item[] \textcolor{darkslategray}{Nonlinear Segregation Dynamics in Schooling Markets: The Case of Caste in India} {\small{with Moumita Das, Shreya Dutt, and Kartik Srivastava}} \href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6807040}{[Link to paper]}\\
+    {\small{\textit{Revisions in progress}}}\\
+    Villages in rural India typically contain a handful of schools within short distances of each other, so families can move children between schools without relocating. We study whether these local schooling markets exhibit tipping points in caste composition: thresholds past which small changes in a school's composition trigger self-reinforcing sorting. Using near-universal administrative panel data on Indian schools over 12 years, we adapt the fixed-point threshold-estimation approach of Card, Mas, and Rothstein (2008) from residential segregation to multi-school markets. We find evidence that schooling markets do exhibit tipping behavior -- and because sorting requires no relocation, segregation across schools within a village rises sharply at these thresholds while the village's own composition remains unchanged. Where the thresholds are identified depends on which caste boundary is in play: the boundary between upper-caste families and all disadvantaged groups tips at a different share than the boundary between intermediate groups and the most marginalized. Tipping is not a general reaction to a school's changing composition; it depends on who is responding to whom. Schools respond as well: inputs and public grants change discretely at the same thresholds, and government and private schools adjust differently.
+
+    \item[] \textcolor{darkslategray}{Class Size Effects in Developing Countries: Longitudinal Evidence from India} {\small{with Arushi Kaushik and Karthik Muralidharan}} \\
+    {\small{\textit{Draft coming soon}}}\\
+    Pupil-teacher ratio norms are a central instrument of education policy in India: the Right to Education Act lowered the mandated ratio from 40:1 to 30:1, adding roughly 400,000 teachers at about \$3.6 billion a year in salaries. Evidence is mixed on the effectiveness of pupil-teacher ratio reductions, especially in developing countries. We estimate the effect of the school-level pupil-teacher ratio on achievement in an annual panel of 500 rural government primary schools in the Indian state of Andhra Pradesh which were surveyed and tested over a five-year period. A 10 percent reduction in the ratio raises value-added scores by about 0.02 standard deviations -- an effect that is consistent across OLS, instrumental variables, and school fixed effects designs. The same three designs diverge when estimated on achievement levels rather than gains, and the divergence is consistent with how much each design relies on the persistent component of variation in the pupil:teacher ratio within schools. This is a comparison that the class size literature has not made, and it is informative about what each design recovers. Priced as lifetime earnings, the gains exceed the cost of the additional teacher, with a benefit-cost ratio of about 1.8. In the same schools and on the same tests, hiring a contract teacher and linking teacher pay to student performance delivered larger gains at lower cost.
+\end{itemize}
+
+\section*{Ongoing and Future Work}
+With Karthik Muralidharan and  Venkatesh Sundararaman, I am working on two experimental papers from the same Andhra Pradesh panel, each studying an alternative to the staffing policy that the class size paper benchmarks. The first asks whether teachers without professional training or civil-service protections can improve learning. These ``contract" teachers are hired locally, serve on fixed-term renewable contracts, and are paid a fifth of a regular teacher's salary. In a government-implemented expansion, a randomly selected subset of APRESt schools received an additional contract teacher. Preliminary results show that students in treated schools scored about 0.16 and 0.15 standard deviations higher in math and language than students in comparison schools in the first two years of the program. Furthermore, contract teachers were absent far less often than their tenured counterparts, putting their effectiveness at least on par with that of regular teachers -- who are paid five times as much. The second extends Muralidharan and Sundararaman (2011, Journal of Political Economy), which evaluated teacher performance pay experimentally over two years, to five years of data -- making it the longest horizon on which teacher performance pay has been evaluated. Our preliminary results suggest that the gains from linking teacher salaries to a performance-based component hold over a full primary school cycle. Students who completed their entire primary schooling under individual teacher incentives scored about 0.54 and 0.35 standard deviations higher in math and language. The gains extend to science and social studies, subjects that were not linked to any incentives, and hold on questions testing conceptual understanding as well as rote learning, which is consistent with genuine additions to human capital rather than teaching to the test. 
+
+In ongoing work with Derek Rury, Sofia Shchukina, and Evan Bennett, I study whether success in high school sports spills over to students beyond the team, linking Texas administrative records that follow public high school students into college and the labor market with historical records of high school football performance. We use a school fixed effects design, and a regression discontinuity design comparing schools that narrowly won and narrowly lost playoff games. Preliminary estimates show no effect on test scores, but fewer disciplinary actions, higher college enrollment, and higher earnings among male students -- a pattern consistent with success in a male-typed, high-status activity shifting boys' aspirations rather than their instruction.
+
+In longer-term work with Karthik Muralidharan and Abhijeet Singh, I plan to use student panel data from Madhya Pradesh, Rajasthan, and Uttar Pradesh to characterize the learning losses associated with small schools and multi-grade teaching in rural India, and to simulate two counterfactual allocations: consolidating small schools within local schooling markets, and distributing teachers and resources differently across grades within schools. Alongside this work, we plan to release these panel data as a public-use resource with accompanying documentation, so that data assembled over years of surveying can support research beyond our own.
+
+\end{document}
